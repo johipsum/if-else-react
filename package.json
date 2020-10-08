@@ -26,8 +26,8 @@
   "bugs": {
     "url": "https://github.com/johipsum/if-else-react/issues"
   },
-  "homepage": "https://github.com/johipsum/if-else-react#readme",
-  "pperDependencies": {
+  "homepage": "https://github.com/johipsum/if-else-react",
+  "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1"
   },
