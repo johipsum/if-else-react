@@ -3,6 +3,7 @@
 ##### Small helper component for conditional rendering,
 
 This
+
 ```
 render() {
   const isLoggedIn = this.state.isLoggedIn;
@@ -15,7 +16,9 @@ render() {
   );
 }
 ```
+
 becomes this ✨
+
 ```
 render() {
   const isLoggedIn = this.state.isLoggedIn;
@@ -30,3 +33,19 @@ render() {
   );
 }
 ```
+
+### Getting Started
+
+Install via npm:
+
+```
+$ npm install if-else-react --save
+```
+
+and then just import it in your app
+
+```
+import If, { Else } from 'if-else-react';
+```
+
+and use it like shown in the example above. done 🎉
