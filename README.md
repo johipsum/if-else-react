@@ -4,7 +4,7 @@
 
 This
 
-```
+```javascript
 render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
@@ -19,7 +19,7 @@ render() {
 
 becomes this ✨
 
-```
+```javascript
 render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
@@ -44,7 +44,7 @@ $ npm install if-else-react --save
 
 and then just import it in your app
 
-```
+```javascript
 import If, { Else } from 'if-else-react';
 ```
 
