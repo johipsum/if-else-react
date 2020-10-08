@@ -1,0 +1,46 @@
+{
+  "name": "if-else-react",
+  "version": "0.5.0",
+  "description": "small helper component for conditional rendering",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "lint:check": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johipsum/if-else-react.git"
+  },
+  "keywords": [
+    "react",
+    "if-else",
+    "conditional",
+    "rendering",
+    "helper",
+    "component"
+  ],
+  "author": "joh ipsum <joh.ipsum@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johipsum/if-else-react/issues"
+  },
+  "homepage": "https://github.com/johipsum/if-else-react#readme",
+  "pperDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.3",
+    "prettier": "^2.1.2"
+  }
+}

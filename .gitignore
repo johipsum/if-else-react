@@ -1,0 +1,9 @@
+/.idea/
+/.tmp/
+/dist/
+/node_modules
+/npm-debug.log
+*.js.map
+.env
+.DS_Store
+.vscode
