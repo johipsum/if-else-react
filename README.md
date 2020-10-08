@@ -1,6 +1,6 @@
 # if-else-react
 
-##### Small helper component for conditional rendering,
+#### Small helper component for conditional rendering.
 
 This
 
