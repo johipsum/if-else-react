@@ -1,8 +1,8 @@
 {
   "name": "if-else-react",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "small helper component for conditional rendering",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
     "lint:check": "eslint src",
