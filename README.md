@@ -9,9 +9,17 @@ render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
     <div>
-      {isLoggedIn
-          ? <LogoutButton onClick={this.handleLogoutClick} />
-          : <LoginButton onClick={this.handleLoginClick} />}
+      {isLoggedIn ? (
+        <span>
+          <Button onClick={this.handdleSettingsClick}>Account Settings</Button>
+          <Button onClick={this.handleLogoutClick}>Logout</Button>
+        </span>
+      ) : (
+        <span>
+          <Button onClick={this.handleLoginClick}>Login</Button>
+          <Button onClick={this.handleSignUpClick}>Sign Up</Button>
+        </span>
+      )}
     </div>
   );
 }
@@ -25,9 +33,11 @@ render() {
   return (
     <div>
       <If condition={isLoggedIn}>
-        <LogoutButton onClick={this.handleLogoutClick} />
+        <Button onClick={this.handdleSettingsClick}>Account Settings</Button>
+        <Button onClick={this.handleLogoutClick}>Logout</Button>
         <Else />
-        <LoginButton onClick={this.handleLoginClick} />
+        <Button onClick={this.handleLoginClick}>Login</Button>
+        <Button onClick={this.handleSignUpClick}>Sign Up</Button>
       </If>
     </div>
   );
