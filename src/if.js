@@ -2,11 +2,14 @@ import React from 'react';
 import { bool, node, oneOfType, arrayOf } from 'prop-types';
 import Else from './else';
 
-const If = ({ condition, children }) => {
+function getIndexOfElse(children) {
   if (!Array.isArray(children)) {
-    return condition ? children : null;
+    return -1;
   }
+  return children.findIndex(child => child && child.type === Else);
+}
 
+const If = ({ condition, children }) => {
   const indexOfElse = getIndexOfElse(children);
 
   if (indexOfElse === -1) {
@@ -26,10 +29,3 @@ If.propTypes = {
 };
 
 export default If;
-
-function getIndexOfElse(children) {
-  if (!Array.isArray(children)) {
-    throw new Error('getIndexOfElse requires an Array as parameter.');
-  }
-  return children.findIndex(child => child && child.type === Else);
-}
