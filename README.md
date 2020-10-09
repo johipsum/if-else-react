@@ -1,4 +1,4 @@
-# if-else-react
+# if-else-react • [![npm](https://badge.fury.io/js/if-else-react.svg)](https://www.npmjs.com/package/if-else-react)
 
 #### Small helper component for conditional rendering.
 
