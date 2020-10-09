@@ -1,6 +1,6 @@
 {
   "name": "if-else-react",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "small helper component for conditional rendering",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "lint:check": "eslint src",
     "lint:fix": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && git tag v$(node -p \"require('./package.json').version\")",
+    "postpublish": "git push origin --tags"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
     "component"
   ],
   "author": "joh ipsum <joh.ipsum@icloud.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/johipsum/if-else-react/issues"
   },
