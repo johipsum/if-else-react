@@ -59,3 +59,24 @@ import If, { Else } from 'if-else-react';
 ```
 
 and use it like shown in the example above. done 🎉
+
+#### The `If` Component
+
+The `If` Component is only rendering whats inside if the `condition` prop is `true`.  
+If there is a `Else` component as a direct children then all children components after the `Else` will be rendered if the `condition` is `false`. 
+
+##### Props
+
+| Prop      | Type                 | Default     | Required? |
+| --------- | -------------------- | ----------- | --------- |
+| condition | `boolean`            | `undefined` | no        |
+
+#### The `Else` Component
+
+The `Else` Component renders and does nothing by itself. But when used inside of a `If`then it seperates what is rendered based on the `condition` passed into the `If`.
+
+##### Props
+
+| Prop     | Type                 | Default     | Required? |
+| -------- | -------------------- | ----------- | --------- |
+| -        | -                    | -           | -         |
