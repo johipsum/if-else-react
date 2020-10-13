@@ -27,4 +27,9 @@ If.propTypes = {
   children: oneOfType([arrayOf(node), node])
 };
 
+If.defaultProps = {
+  condition: false,
+  children: []
+}
+
 export default If;
