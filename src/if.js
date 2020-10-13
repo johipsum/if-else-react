@@ -1,4 +1,3 @@
-import React from 'react';
 import { bool, node, oneOfType, arrayOf } from 'prop-types';
 import Else from './else';
 
