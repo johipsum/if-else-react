@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Else = () => <span />;
+const Else = () => React.createElement('span', null);
 
 export default Else;
