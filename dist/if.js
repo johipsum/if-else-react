@@ -3,15 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
-
-var _react = _interopRequireDefault(require("react"));
+exports.default = void 0;
 
 var _propTypes = require("prop-types");
 
 var _else = _interopRequireDefault(require("./else"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function getIndexOfElse(children) {
   if (!Array.isArray(children)) {
@@ -19,7 +17,7 @@ function getIndexOfElse(children) {
   }
 
   return children.findIndex(function (child) {
-    return child && child.type === _else["default"];
+    return child && child.type === _else.default;
   });
 }
 
@@ -43,5 +41,9 @@ If.propTypes = {
   condition: _propTypes.bool,
   children: (0, _propTypes.oneOfType)([(0, _propTypes.arrayOf)(_propTypes.node), _propTypes.node])
 };
+If.defaultProps = {
+  condition: false,
+  children: []
+};
 var _default = If;
-exports["default"] = _default;
+exports.default = _default;
