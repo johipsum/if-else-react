@@ -30,6 +30,6 @@ If.propTypes = {
 If.defaultProps = {
   condition: false,
   children: []
-}
+};
 
 export default If;
